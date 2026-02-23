@@ -1,0 +1,64 @@
+# Dependencies
+/node_modules
+/vendor
+/composer.lock
+/package-lock.json
+/auth.json
+
+# Laravel specific
+/public/build
+/public/hot
+/public/storage
+/storage/*.key
+/storage/logs/
+/storage/framework/cache/
+/storage/framework/sessions/
+/storage/framework/views/
+/storage/debugbar/
+
+# Environment files
+/.env
+/.env.backup
+/.env.production
+/.env.local
+/.env.*.local
+
+# Testing
+/.phpunit.cache
+/.phpunit.result.cache
+/Homestead.json
+/Homestead.yaml
+
+# Logs
+/*.log
+/error_log
+/npm-debug.log
+/yarn-error.log
+
+# Uploads & Temp
+/uploads/
+/temp/
+/tmp/
+
+# IDE
+/.fleet
+/.idea
+/.vscode
+
+# OS files
+/.DS_Store
+/Thumbs.db
+/desktop.ini
+
+# Database
+/*.sql
+/*.sqlite
+/*.db
+
+# Cache
+/cache/
+/*.cache
+
+# Vercel
+/.vercel
+/vercel.json
