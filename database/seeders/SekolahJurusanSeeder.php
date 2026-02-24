@@ -33,7 +33,9 @@ class SekolahJurusanSeeder extends Seeder
         ];
 
         foreach ($jurusanList as $jurusan) {
-            Jurusan::create($jurusan);
+            Jurusan::firstOrCreate([
+                'nama_jurusan' => $jurusan
+            ]);
         }
     }
 }
