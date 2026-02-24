@@ -6,7 +6,6 @@
 /auth.json
 
 # Laravel specific
-/public/build
 /public/hot
 /public/storage
 /storage/*.key
