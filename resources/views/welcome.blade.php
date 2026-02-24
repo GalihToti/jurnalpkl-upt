@@ -115,19 +115,19 @@
             </div>
 
             <!-- Step 3 -->
-            <div class="step-card flex items-start gap-3 p-4 bg-yellow-50 rounded-lg border-l-6 border-yellow-500">
-                <div class="bg-yellow-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-base flex-shrink-0 shadow">3</div>
+            <div class="step-card flex items-start gap-3 p-4 bg-blue-50 rounded-lg border-l-6 border-blue-500">
+                <div class="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-base flex-shrink-0 shadow">3</div>
                 <div>
-                    <h3 class="font-bold text-base text-yellow-800">Akses Menu Jurnal</h3>
-                    <p class="text-gray-700 text-sm mt-0.5">Setelah data prakerin tersimpan, siswa dapat mengakses menu <span class="font-semibold bg-yellow-200 px-1.5 py-0.5 rounded text-xs">Jurnal</span>.</p>
+                    <h3 class="font-bold text-base text-blue-800">Akses Menu Jurnal</h3>
+                    <p class="text-gray-700 text-sm mt-0.5">Setelah data prakerin tersimpan, siswa dapat mengakses menu <span class="font-semibold bg-blue-200 px-1.5 py-0.5 rounded text-xs">Jurnal</span>.</p>
                 </div>
             </div>
 
             <!-- Step 4 -->
-            <div class="step-card flex items-start gap-3 p-4 bg-purple-50 rounded-lg border-l-6 border-purple-500">
-                <div class="bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-base flex-shrink-0 shadow">4</div>
+            <div class="step-card flex items-start gap-3 p-4 bg-green-50 rounded-lg border-l-6 border-green-500">
+                <div class="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-base flex-shrink-0 shadow">4</div>
                 <div>
-                    <h3 class="font-bold text-base text-purple-800">Input Jurnal Kegiatan</h3>
+                    <h3 class="font-bold text-base text-green-800">Input Jurnal Kegiatan</h3>
                     <p class="text-gray-700 text-sm mt-0.5">Catat kegiatan harian selama prakerin. Input tanggal, tempat, dan deskripsi kegiatan.</p>
                 </div>
             </div>
@@ -198,9 +198,9 @@
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-lg p-4 border border-yellow-100">
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-lg p-4 border border-yellow-100">
             <div class="flex items-start gap-3">
-                <div class="bg-yellow-600 p-2 rounded-lg">
+                <div class="bg-green-600 p-2 rounded-lg">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path>
                     </svg>
@@ -212,9 +212,9 @@
             </div>
         </div>
 
-        <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-4 border border-purple-100">
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-4 border border-purple-100">
             <div class="flex items-start gap-3">
-                <div class="bg-purple-600 p-2 rounded-lg">
+                <div class="bg-blue-600 p-2 rounded-lg">
                     <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
                     </svg>

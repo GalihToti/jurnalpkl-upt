@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+.env.*
+.editorconfig
+README.md
+storage/
+tests/
+.docker
+docker-compose.yml
+phpunit.xml

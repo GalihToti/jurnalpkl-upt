@@ -62,3 +62,6 @@
 # Vercel
 /.vercel
 /vercel.json
+
+!vercel.json
+!api/

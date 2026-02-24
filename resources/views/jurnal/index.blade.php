@@ -57,8 +57,8 @@
                     Cari
                 </button>
                 @if(request('search'))
-                <a href="{{ route('jurnal.index') }}" 
-                   class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-xs font-medium transition flex items-center gap-1">
+                <a href="{{ route('jurnal.index') }}"
+                    class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-2 rounded-lg text-xs font-medium transition flex items-center gap-1">
                     <i class="fas fa-times"></i>
                     Reset
                 </a>
@@ -74,7 +74,7 @@
                 Cetak Laporan Jurnal
             </a>
         </div>
-        
+
         <!-- Info filter aktif -->
         @if(request('search'))
         <div class="mt-2 text-xs text-gray-600 bg-blue-50 px-2 py-1.5 rounded">
@@ -111,8 +111,10 @@
                         </td>
                         <td class="px-2 py-2 font-medium text-gray-800">{{ $item->prakerin->nama_siswa ?? '-' }}</td>
                         <td class="px-2 py-2 text-gray-700">{{ $item->prakerin->sekolah->nama_sekolah ?? '-' }}</td>
-                        <td class="px-2 py-2 text-gray-700 max-w-[150px] truncate" title="{{ $item->kegiatan }}">
-                            {{ $item->kegiatan }}
+                        <td class="px-2 py-2 text-gray-700 max-w-[250px] whitespace-normal break-words relative group">
+                            <span class="line-clamp-2 hover:line-clamp-none transition-all">
+                                {{ $item->kegiatan }}
+                            </span>
                         </td>
                         <td class="px-2 py-2 text-gray-700">{{ $item->tempat }}</td>
                         <td class="px-2 py-2 text-center text-gray-700 whitespace-nowrap text-[10px]">
@@ -176,7 +178,7 @@
                 </span>
                 @endif
             </div>
-            
+
             <!-- Pagination dengan Tailwind classes -->
             @if($jurnal->hasPages())
             <div class="flex items-center gap-1">
@@ -189,21 +191,21 @@
 
                 {{-- Pagination Elements --}}
                 @foreach($jurnal->getUrlRange(1, $jurnal->lastPage()) as $page => $url)
-                    @if($page == $jurnal->currentPage())
-                    <span class="px-2 py-1 text-white bg-blue-500 rounded border border-blue-500 text-xs">{{ $page }}</span>
-                    @elseif($page >= $jurnal->currentPage() - 2 && $page <= $jurnal->currentPage() + 2)
+                @if($page == $jurnal->currentPage())
+                <span class="px-2 py-1 text-white bg-blue-500 rounded border border-blue-500 text-xs">{{ $page }}</span>
+                @elseif($page >= $jurnal->currentPage() - 2 && $page <= $jurnal->currentPage() + 2)
                     <a href="{{ $url }}" class="px-2 py-1 text-gray-700 bg-white rounded border border-gray-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition text-xs">{{ $page }}</a>
                     @elseif($page == $jurnal->currentPage() - 3 || $page == $jurnal->currentPage() + 3)
                     <span class="px-2 py-1 text-gray-400">...</span>
                     @endif
-                @endforeach
+                    @endforeach
 
-                {{-- Next Page Link --}}
-                @if($jurnal->hasMorePages())
-                <a href="{{ $jurnal->nextPageUrl() }}" class="px-2 py-1 text-gray-700 bg-white rounded border border-gray-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition text-xs">»</a>
-                @else
-                <span class="px-2 py-1 text-gray-400 bg-gray-100 rounded border border-gray-200 text-xs cursor-not-allowed">»</span>
-                @endif
+                    {{-- Next Page Link --}}
+                    @if($jurnal->hasMorePages())
+                    <a href="{{ $jurnal->nextPageUrl() }}" class="px-2 py-1 text-gray-700 bg-white rounded border border-gray-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition text-xs">»</a>
+                    @else
+                    <span class="px-2 py-1 text-gray-400 bg-gray-100 rounded border border-gray-200 text-xs cursor-not-allowed">»</span>
+                    @endif
             </div>
             @endif
         </div>
