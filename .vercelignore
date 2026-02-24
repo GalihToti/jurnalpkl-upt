@@ -9,3 +9,5 @@ tests/
 .docker
 docker-compose.yml
 phpunit.xml
+/vendor
+/node_modules
