@@ -67,3 +67,7 @@
 !api/
 .vercel
 .env*.local
+
+# Force include build folder
+!public/build/
+!public/build/**/*
