@@ -63,5 +63,6 @@
 /.vercel
 /vercel.json
 
+!.env.production
 !vercel.json
 !api/
