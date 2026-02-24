@@ -9,7 +9,7 @@
 
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="{{ asset('build/app-Fb7wQ0u4.css') }}">
     @stack('styles')
 </head>
 
