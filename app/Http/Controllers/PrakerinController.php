@@ -109,6 +109,7 @@ class PrakerinController extends Controller
 
     public function show($id)
     {
+        dd($id);
         $prakerin = Prakerin::with(['sekolah', 'jurusan'])
             ->findOrFail($id);
 
