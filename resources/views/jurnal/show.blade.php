@@ -130,23 +130,23 @@
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Asal Sekolah</td>
-                <td class="py-2 pl-2">: {{ strtoupper($prakerin->sekolah->nama_sekolah ?? 'SMKN 1 JIWAN') }}</td>
+                <td class="py-2 pl-2">: {{ strtoupper($prakerin->sekolah->nama_sekolah ?? '-') }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Jurusan</td>
-                <td class="py-2 pl-2">: {{ strtoupper($prakerin->jurusan->nama_jurusan ?? 'TEKNIK KOMPUTER DAN JARINGAN') }}</td>
+                <td class="py-2 pl-2">: {{ strtoupper($prakerin->jurusan->nama_jurusan ?? '-') }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Kegiatan</td>
-                <td class="py-2 pl-2">: {{ $jurnal->tanggal ? \Carbon\Carbon::parse($jurnal->tanggal)->format('d-m-Y') : '15-07-2025' }}</td>
+                <td class="py-2 pl-2">: {{ $jurnal->tanggal ? \Carbon\Carbon::parse($jurnal->tanggal)->format('d-m-Y') : '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tempat</td>
-                <td class="py-2 pl-2">: {{ $jurnal->tempat ?? 'Laboratorium Komputer' }}</td>
+                <td class="py-2 pl-2">: {{ $jurnal->tempat ?? '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Kegiatan</td>
-                <td class="py-2 pl-2 text-justify">: {{ $jurnal->kegiatan ?? 'Melakukan instalasi sistem operasi dan konfigurasi jaringan' }}</td>
+                <td class="py-2 pl-2 text-justify">: {{ $jurnal->kegiatan ?? '-' }}</td>
             </tr>
         </table>
 
