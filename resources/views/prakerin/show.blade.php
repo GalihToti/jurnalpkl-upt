@@ -116,11 +116,11 @@
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Mulai Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin?->format('d-m-Y') : '-' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin ?? '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Akhir Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin?->format('d-m-Y') : '' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin ?? '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Jurusan</td>
