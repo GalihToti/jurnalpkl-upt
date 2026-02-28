@@ -111,7 +111,7 @@ class PrakerinController extends Controller
     {
         $prakerin = Prakerin::with(['sekolah', 'jurusan'])
             ->find($id);
-            dd($id);
+            dd($prakerin);
 
         return view('prakerin.show', compact('prakerin'));
     }
