@@ -5,10 +5,6 @@ use App\Http\Controllers\PrakerinController;
 use App\Http\Controllers\JurnalController;
 use App\Http\Controllers\BerandaController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::resource('prakerin', PrakerinController::class);
 Route::get('/laporan-prakerin/print', [PrakerinController::class, 'printLaporan'])->name('prakerin.print');
 

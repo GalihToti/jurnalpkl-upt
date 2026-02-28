@@ -1,11 +1,11 @@
-<!-- resources/views/prakerin/print-detail.blade.php -->
+<!-- resources/views/prakerin/show.blade.php -->
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Print Detail Prakerin - SIPRAKERIN</title>
-    @vite('resources/css/app.css')
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         @media print {
             @page {
@@ -108,23 +108,23 @@
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Nama Siswa</td>
-                <td class="py-2 pl-2">: {{ strtoupper($prakerin->nama_siswa ?? 'DWI AGUSTINA') }}</td>
+                <td class="py-2 pl-2">: {{ strtoupper($prakerin->nama_siswa ?? '-') }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Asal Sekolah</td>
-                <td class="py-2 pl-2">: {{ strtoupper($prakerin->sekolah->nama_sekolah ?? 'SMKN 1 JIWAN') }}</td>
+                <td class="py-2 pl-2">: {{ strtoupper(optional($prakerin->sekolah)->nama_sekolah ?? '-') }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Mulai Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin ? \Carbon\Carbon::parse($prakerin->tanggal_mulai_prakerin)->format('d-m-Y') : '03-07-2025' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin?->format('d-m-Y') : '03-07-2025' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Akhir Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin ? \Carbon\Carbon::parse($prakerin->tanggal_akhir_prakerin)->format('d-m-Y') : '03-12-2025' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin?->format('d-m-Y') : '03-12-2025' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Jurusan</td>
-                <td class="py-2 pl-2">: {{ strtoupper($prakerin->jurusan->nama_jurusan ?? 'TEKNIK KOMPUTER DAN JARINGAN') }}</td>
+                <td class="py-2 pl-2">: {{ strtoupper(optional($prakerin->jurusan)->nama_jurusan ?? '-') }}</td>
             </tr>
         </table>
 
