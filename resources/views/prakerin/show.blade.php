@@ -100,11 +100,11 @@
         <table class="w-full text-sm">
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Nomor Pendaftaran</td>
-                <td class="py-2 pl-2">: {{ $prakerin->no_pendataan ?? '142' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->no_pendataan ?? '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">NIS</td>
-                <td class="py-2 pl-2">: {{ $prakerin->nis ?? '5156' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->nis ?? '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Nama Siswa</td>
@@ -116,11 +116,11 @@
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Mulai Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin?->format('d-m-Y') : '03-07-2025' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_mulai_prakerin?->format('d-m-Y') : '-' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Tanggal Akhir Prakerin</td>
-                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin?->format('d-m-Y') : '03-12-2025' }}</td>
+                <td class="py-2 pl-2">: {{ $prakerin->tanggal_akhir_prakerin?->format('d-m-Y') : '' }}</td>
             </tr>
             <tr class="align-top">
                 <td class="font-bold w-48 py-2">Jurusan</td>
